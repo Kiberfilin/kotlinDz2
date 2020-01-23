@@ -1,6 +1,7 @@
 package ru.netology.hierarchy.view
 
-class ViewGroup(var view: View) : View() {
+class ViewGroup() : View() {
+    lateinit var view: View
     fun addView(view: View) {
         this.view = view
     }
